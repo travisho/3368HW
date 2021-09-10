@@ -1,0 +1,57 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ComboBox?>
+<HBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
+
+    <VBox>
+        <TableView fx:id="studentList" prefWidth="600"/>
+    </VBox>
+
+    <VBox>
+
+        <Label text = "Database Options" prefHeight="25" prefWidth="300" alignment="TOP_CENTER"/>
+        <HBox>
+            <Button text = "Create Database" prefWidth="150" fx:id = "createDatabase"/>
+            <Button text = "Load Database" prefWidth="150 " fx:id = "loadDatabase"/>
+        </HBox>
+
+        <Label text="Filter Options" prefHeight="50" prefWidth="300" alignment="CENTER"/>
+        <HBox>
+            <ComboBox fx:id="filterBox" prefWidth="200"/>
+            <Button text = "Filter" prefWidth="100" fx:id="filterButton"/>
+        </HBox>
+
+        <Label text = "New Student" prefHeight="50" prefWidth="300" alignment="CENTER"/>
+        <HBox>
+            <Label text = " Name: " prefWidth="100"/>
+            <TextField fx:id="nameField" prefWidth="200"/>
+        </HBox>
+
+        <HBox>
+            <Label text = " Age: " prefWidth="100"/>
+            <TextField fx:id="ageField" prefWidth="200"/>
+        </HBox>
+
+        <HBox>
+            <Label text = " Major: " prefWidth="100"/>
+            <TextField fx:id="majorField" prefWidth="200"/>
+        </HBox>
+
+        <HBox>
+            <Label text = " GPA: " prefWidth="100"/>
+            <TextField fx:id="gpaField" prefWidth="200"/>
+        </HBox>
+
+        <Button text="Submit" fx:id = "submitButton"/>
+
+    </VBox>
+
+</HBox>
